@@ -23,7 +23,7 @@ forecasts been?"_
 | --- | --- |
 | MCP endpoint | `https://emc2ai.io/api/mcp` (streamable HTTP) |
 | Free tools | 18 — anonymous, no account |
-| Paid tools | 22 — live analysis, OAuth + prepaid credit balance |
+| Paid tools | live analysis — OAuth + prepaid credit balance |
 | Docs | https://emc2ai.io/mcp |
 | Privacy | https://emc2ai.io/privacy-policy/ |
 | Terms | https://emc2ai.io/terms-of-services/ |

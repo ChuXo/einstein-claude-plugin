@@ -35,7 +35,7 @@ and move on.
 ## Paid — account plus prepaid credit
 
 Paid tools run live work: security scans on an arbitrary contract, wallet
-analysis, forecasts on any token, backtests, deep research, media generation.
+analysis, forecasts on any token, backtests, deep research.
 They need an Einstein account (OAuth 2.1, which the host will prompt for) and a
 credit balance, and they say what they cost before running.
 
