@@ -1,0 +1,26 @@
+{
+  "name": "einstein",
+  "displayName": "Agent Einstein",
+  "description": "Crypto and market intelligence: AI price forecasts with a published accuracy record, market sentiment, smart-money and whale flows, prediction-market signals, Bitcoin cycle data and congressional trades. Eighteen tools need no account.",
+  "version": "3.0.0",
+  "author": {
+    "name": "ChuXo",
+    "url": "https://emc2ai.io"
+  },
+  "homepage": "https://emc2ai.io/mcp",
+  "repository": "https://github.com/ChuXo/Eliza",
+  "license": "MIT",
+  "keywords": [
+    "crypto",
+    "trading",
+    "forecasting",
+    "onchain",
+    "market-data"
+  ],
+  "mcpServers": {
+    "einstein": {
+      "type": "http",
+      "url": "https://emc2ai.io/api/mcp"
+    }
+  }
+}
