@@ -2,7 +2,7 @@
   "name": "einstein",
   "displayName": "Agent Einstein",
   "description": "Crypto and market intelligence: AI price forecasts with a published accuracy record, market sentiment, smart-money and whale flows, prediction-market signals, Bitcoin cycle data and congressional trades. Eighteen tools need no account.",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "author": {
     "name": "ChuXo",
     "url": "https://emc2ai.io"
