@@ -19,14 +19,14 @@ forecasts been?"_
 
 ## What you get
 
-| | |
-| --- | --- |
-| MCP endpoint | `https://emc2ai.io/api/mcp` (streamable HTTP) |
-| Free tools | 18 — anonymous, no account |
-| Paid tools | live analysis — OAuth + prepaid credit balance |
-| Docs | https://emc2ai.io/mcp |
-| Privacy | https://emc2ai.io/privacy-policy/ |
-| Terms | https://emc2ai.io/terms-of-services/ |
+|              |                                                |
+| ------------ | ---------------------------------------------- |
+| MCP endpoint | `https://emc2ai.io/api/mcp` (streamable HTTP)  |
+| Free tools   | 18 — anonymous, no account                     |
+| Paid tools   | live analysis — OAuth + prepaid credit balance |
+| Docs         | https://emc2ai.io/mcp                          |
+| Privacy      | https://emc2ai.io/privacy-policy/              |
+| Terms        | https://emc2ai.io/terms-of-services/           |
 
 The free tools read snapshots Einstein's scheduled research already computed, so
 they answer fast and cost nothing. Paid tools — live security scans on any
@@ -46,5 +46,10 @@ Market and on-chain analysis is information, not financial advice.
 
 ---
 
-Source of this package: [`ChuXo/Eliza`
-→ `packages/project-einstein/distribution/claude-code`](https://github.com/ChuXo/Eliza/tree/develop/packages/project-einstein/distribution/claude-code).
+Source of this package:
+[`ChuXo/einstein-claude-plugin`](https://github.com/ChuXo/einstein-claude-plugin) —
+built from the Agent Einstein monorepo and mirrored here. MIT licensed; see
+[`LICENSE`](./LICENSE).
+
+Security reports: <https://emc2ai.io/.well-known/security.txt>
+Support: <ainstein1@outlook.com>

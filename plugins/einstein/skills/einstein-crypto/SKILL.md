@@ -32,6 +32,11 @@ A free tool that reports "not warm yet" means the snapshot has not been computed
 recently. That is not an error and it is not worth retrying in a loop — say so
 and move on.
 
+Most of these accept `limit` (1-25, default 10) and it is applied to the row
+lists inside the answer, not just echoed back. Ask for what you will actually
+read: the default already trims, and a payload that comes back with a
+`truncated` block is telling you how many rows exist behind the ones you got.
+
 ## Paid — account plus prepaid credit
 
 Paid tools run live work: security scans on an arbitrary contract, wallet
@@ -56,8 +61,16 @@ link — surface that link to the user rather than treating it as an error.
 
 ## Honesty rules
 
+- **This is information, not advice.** Einstein's market, on-chain and strategy
+  output is AI-generated research — not financial, investment, legal or tax
+  advice, and not a personalised recommendation. No human adviser reviews it
+  before the user sees it. Say so the first time you present anything the user
+  could act on with money (a forecast, a signal, an allocation, a yield), and
+  present it as analysis to weigh rather than as an instruction to follow.
 - Never state a forecast as a certainty. The tools return bands and model
   agreement; pass both through.
 - Never invent an accuracy, precision or hit-rate figure. If you need one, call
   `get_forecast_accuracy`.
 - Free-tool data is a cached snapshot with an age attached. Quote the age.
+- When a result carries a `truncated` block, say how many rows exist — never
+  report the rows you received as if they were the whole set.

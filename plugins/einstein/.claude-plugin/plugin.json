@@ -8,15 +8,9 @@
     "url": "https://emc2ai.io"
   },
   "homepage": "https://emc2ai.io/mcp",
-  "repository": "https://github.com/ChuXo/Eliza",
+  "repository": "https://github.com/ChuXo/einstein-claude-plugin",
   "license": "MIT",
-  "keywords": [
-    "crypto",
-    "trading",
-    "forecasting",
-    "onchain",
-    "market-data"
-  ],
+  "keywords": ["crypto", "trading", "forecasting", "onchain", "market-data"],
   "mcpServers": {
     "einstein": {
       "type": "http",

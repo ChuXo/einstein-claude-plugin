@@ -19,14 +19,7 @@
       "homepage": "https://emc2ai.io/mcp",
       "license": "MIT",
       "category": "data",
-      "keywords": [
-        "crypto",
-        "trading",
-        "forecasting",
-        "onchain",
-        "market-data",
-        "mcp"
-      ]
+      "keywords": ["crypto", "trading", "forecasting", "onchain", "market-data", "mcp"]
     }
   ]
 }
