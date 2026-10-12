@@ -1,8 +1,8 @@
 {
   "name": "einstein",
   "displayName": "Agent Einstein",
-  "description": "Crypto and market intelligence: AI price forecasts with a published accuracy record, market sentiment, smart-money and whale flows, prediction-market signals, Bitcoin cycle data and congressional trades. Eighteen tools need no account.",
-  "version": "3.1.0",
+  "description": "Crypto and market intelligence: AI price forecasts with a published accuracy record, market sentiment, smart-money and whale flows, prediction-market signals, Bitcoin cycle data and congressional trades. Nineteen tools are free and need no account. Twenty-three tools are paid per call from a prepaid Einstein credit balance, which is topped up on emc2ai.io with USDC or E=MC2 on Base. No tool signs or sends a transaction, moves funds or connects a wallet.",
+  "version": "3.1.1",
   "author": {
     "name": "ChuXo",
     "url": "https://emc2ai.io"
@@ -11,6 +11,11 @@
   "repository": "https://github.com/ChuXo/einstein-claude-plugin",
   "license": "MIT",
   "keywords": ["crypto", "trading", "forecasting", "onchain", "market-data"],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://emc2ai.io/mcp",
+  "supportUrl": "https://github.com/ChuXo/einstein-claude-plugin/issues",
+  "privacyPolicyUrl": "https://emc2ai.io/privacy-policy/",
+  "termsOfServiceUrl": "https://emc2ai.io/terms-of-services/",
   "mcpServers": {
     "einstein": {
       "type": "http",

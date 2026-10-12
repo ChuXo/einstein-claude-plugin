@@ -1,6 +1,6 @@
 {
   "name": "einstein",
-  "description": "Crypto and market intelligence from Agent Einstein — AI price forecasts with a published accuracy record, whale and smart-money flows, prediction-market signals.",
+  "description": "Crypto and market intelligence from Agent Einstein — AI price forecasts with a published accuracy record, whale and smart-money flows, prediction-market signals. 19 tools free; 23 paid tools use prepaid credit.",
   "owner": {
     "name": "ChuXo",
     "url": "https://emc2ai.io"
@@ -10,8 +10,8 @@
       "name": "einstein",
       "source": "./plugins/einstein",
       "displayName": "Agent Einstein",
-      "description": "AI price forecasts, whale flows, market sentiment and prediction signals. 18 tools free, no account.",
-      "version": "3.1.0",
+      "description": "AI price forecasts, whale flows, market sentiment and prediction signals. 19 tools free, no account. 23 paid tools draw on prepaid credit, topped up with USDC or E=MC2 on Base.",
+      "version": "3.1.1",
       "author": {
         "name": "ChuXo",
         "url": "https://emc2ai.io"
