@@ -1,6 +1,6 @@
 ---
 name: einstein-crypto
-description: Crypto and market intelligence via the Agent Einstein MCP server — AI price forecasts with a published accuracy record, whale and smart-money flows, market sentiment, prediction-market signals, Bitcoin cycle position, congressional trades, token safety. Nineteen tools are free; twenty-three are paid from a prepaid credit balance. Use when the question is about crypto prices, forecasts, on-chain flows, market sentiment, a token's safety, or a prediction market.
+description: Crypto and market intelligence via the Agent Einstein MCP server — AI price forecasts with a published accuracy record, whale and smart-money flows, market sentiment, prediction-market signals, Bitcoin cycle position, congressional trades, token safety. Nineteen tools are free; twenty-one are paid from a prepaid credit balance. Use when the question is about crypto prices, forecasts, on-chain flows, market sentiment, a token's safety, or a prediction market.
 ---
 
 # Agent Einstein
@@ -12,7 +12,7 @@ This plugin connects to Einstein's public MCP server at
 
 <!-- generated:tools:start — bun run build:claude-plugin-docs -->
 
-The server at `https://emc2ai.io/api/mcp` offers **42 tools: 19 free and 23 paid**. 41 of the 42 only read data. The exception is `generate_quantum_key`, explained on its own line. This list is generated from the server's own tool registry.
+The server at `https://emc2ai.io/api/mcp` offers **40 tools: 19 free and 21 paid**. 39 of the 40 only read data. The exception is `generate_quantum_key`, explained on its own line. This list is generated from the server's own tool registry.
 
 ### Free tools (19) — no account, no sign-in, no payment
 
@@ -38,12 +38,12 @@ Each one reads a snapshot Einstein already computed on a schedule. A snapshot th
 - `get_launchpad_radar` (Launchpad Radar) — Tokens that just migrated from a launchpad bonding curve to a DEX, with holder-distribution forensics. **Free.** Read-only.
 - `list_einstein_capabilities` (List Einstein Capabilities) — The live catalog of every tool on the server, split into free and paid with prices, plus how billing works. **Free.** Read-only.
 
-### Paid tools (23) — Einstein account and prepaid credit
+### Paid tools (21) — Einstein account and prepaid credit
 
 Each call costs between $0.05 and $2.00, debited in US dollars from a prepaid credit balance. Where a price is a range, the `kind` (or `venue` / `board`) argument selects the analysis and its price.
 
 - `ask_einstein` (Ask Einstein) — Open-ended written crypto and DeFi analysis grounded in live on-chain and market data, for questions no specific tool fits. **Paid, $1.00 per call.** Read-only.
-- `scan_v4_hooks` (Uniswap v4 Hook Radar) — Census of Uniswap v4 hook contracts on Robinhood Chain or Base: which create the most pools and what each is permitted to do to a trader or LP. **Paid, $0.25 per call.** Read-only.
+- `scan_v4_hooks` (Uniswap v4 Hook Radar) — Census of Uniswap v4 hook contracts on Robinhood Chain, BNB Chain, Ethereum and Base: which create the most pools and what each is permitted to do to a trader or LP. **Paid, $0.25 per call.** Read-only.
 - `forecast_chart` (AI Chart Forecast) — Live price data and a fresh dual-model forecast with confidence bands for any token on a supported chain. **Paid, $0.65 per call.** Read-only.
 - `analyze_token_security` (Token Security Analysis) — Live security analysis of a token contract: rug-pull risk, holder concentration, sniper activity, dangerous approvals or a contract audit. **Paid, $0.35–$2.00 per call.** Read-only.
 - `inspect_onchain` (Contract Review · Transaction Debugger · Fund-Flow Trace) — Block-explorer analysis on 18 EVM chains: review a deployed contract, explain one transaction, or trace a fund flow. **Paid, $0.25–$0.35 per call.** Read-only.
@@ -51,19 +51,17 @@ Each call costs between $0.05 and $2.00, debited in US dollars from a prepaid cr
 - `analyze_tokenized_stocks` (Tokenized-Equity Market Intelligence) — Intelligence on tokenized-equity and stock-paired token markets on Base and Robinhood Chain: float risk, launches, early buyers, trader records. **Paid, $0.25 per call.** Read-only.
 - `track_whales` (Whale and Smart-Money Tracking) — Live large-holder activity: on-chain whale transfers, Hyperliquid perp whale positioning, or the profitable smart-money cohort. **Paid, $0.45–$0.50 per call.** Read-only.
 - `scan_market` (Market Scan) — Live market scans: top gainers, movers, quality-filtered gainers, altcoin season, technical analysis for one asset, or the market regime. **Paid, $0.25–$0.60 per call.** Read-only.
-- `detect_mev` (MEV Detection and Protection) — Detects sandwich attacks and MEV extraction against a token or wallet, reads the public mempool, or returns a written routing recommendation. **Paid, $0.45–$0.60 per call.** Read-only.
+- `detect_mev` (MEV Detection and Protection) — Detects sandwich attacks and MEV extraction against a token or wallet, or returns a written routing recommendation. **Paid, $0.50–$0.60 per call.** Read-only.
 - `find_arbitrage` (Arbitrage Scanner) — Reports price dislocations across DEXs, chains and prediction markets, including flash-loan-fundable routes. It reports them; it does not trade them. **Paid, $0.60–$1.00 per call.** Read-only.
 - `scan_launchpads` (Launchpad Scanner) — New and trending token launches on Pump.fun, Zora or Robinhood Chain. **Paid, $0.25–$0.40 per call.** Read-only.
 - `analyze_bitcoin` (Bitcoin Analytics) — Bitcoin analysis: mempool and fees, network and mining health, BRC-20 tokens, Runes, bridge comparison or Babylon staking data. **Paid, $0.25–$0.85 per call.** Read-only.
-- `assess_quantum_risk` (Quantum Risk Assessment) — Assessment of exposure to quantum computing: post-quantum readiness, a migration plan, portfolio-level risk, or current benchmark distance. **Paid, $0.50–$1.00 per call.** Read-only.
+- `assess_quantum_risk` (Quantum Risk Assessment) — Assessment of exposure to quantum computing: post-quantum readiness, a migration plan, or the quantum risk of a wallet's address types. **Paid, $0.50–$0.75 per call.** Read-only.
 - `generate_quantum_key` (Quantum Key Generation) — Generates new key material from quantum randomness — entropy for a wallet seed phrase, an encryption key or a signing key, or raw random numbers — and returns it once. **Paid, $0.25–$2.00 per call.** Not read-only: it creates new key material (random entropy). It is returned once in the tool result and not stored by us. It creates no account, connects to no existing wallet, signs nothing and moves no funds.
 - `analyze_prediction_markets` (Prediction Market Analysis) — Polymarket analysis: browse live markets, scan for insider-shaped positions, measure spreads, find high-conviction positioning or over-priced long shots. **Paid, $0.50–$1.50 per call.** Read-only.
 - `find_yield` (Yield Opportunity Finder) — Lists DeFi lending, LP, Pendle and vault yield opportunities ranked by risk-adjusted return, and liquidation opportunities. It lists them; it deposits nothing. **Paid, $0.10–$0.75 per call.** Read-only.
 - `run_backtest` (Strategy Backtest) — Backtests a trading strategy on historical data from plain-language rules or a standard template, or optimizes its parameters. **Paid, $0.75–$2.00 per call.** Read-only.
 - `get_trade_signals` (Live Trade Signals) — Einstein's current trade setups with entry, stop and target levels and the reasoning behind each. Information only; no order is placed. **Paid, $0.50 per call.** Read-only.
-- `analyze_copy_trading` (Copy Trading Intelligence) — A ranked leaderboard of profitable wallets, or a deeper read on one trader's edge, consistency and risk. **Paid, $0.85–$1.00 per call.** Read-only.
-- `recommend_allocation` (Portfolio and Strategy Allocation) — Written allocation guidance: portfolio risk allocation, a capital split across strategies, a strategy-gate check or a whole-market read. **Paid, $0.50–$1.00 per call.** Read-only.
-- `check_content_integrity` (Content Integrity Scan) — AI moderation and integrity scan of text you supply (user-generated content or a yield-vault listing). **Paid, $0.05–$1.00 per call.** Read-only.
+- `check_content_integrity` (Content Integrity Scan) — AI moderation of text you supply — a 0-10 quality score with a written rationale — or the list of yield vaults Einstein has scanned. **Paid, $0.05–$0.10 per call.** Read-only.
 - `get_agent_context` (Einstein Agent Context) — Einstein's own current market context and operating state — the briefing its autonomous engine reads before a decision. **Paid, $1.00 per call.** Read-only.
 
 <!-- generated:tools:end -->
@@ -73,7 +71,7 @@ Each call costs between $0.05 and $2.00, debited in US dollars from a prepaid cr
 <!-- generated:pricing:start — bun run build:claude-plugin-docs -->
 
 - **Nineteen tools are free.** No account, no API key, no wallet and no payment.
-- **Twenty-three tools are paid**, $0.05 to $2.00 per call. They need an Einstein account and a prepaid credit balance held in US dollars. The price of each tool is in the list above and in the tool's own description.
+- **Twenty-one tools are paid**, $0.05 to $2.00 per call. They need an Einstein account and a prepaid credit balance held in US dollars. The price of each tool is in the list above and in the tool's own description.
 - **Signing in.** The first paid call makes Claude open an OAuth 2.1 sign-in page on `emc2ai.io` in your browser. You can sign in with an Einstein account, or by connecting a crypto wallet and signing a login message that proves the address is yours. That signature is not a transaction and costs nothing.
 - **A new account starts with $0.00 of credit.** A paid call with no balance charges nothing and returns a link to add credit.
 - **Adding credit requires a crypto payment.** Today the only way to add credit is to send USDC or E=MC2 (our token) on the Base network from your own wallet, at `emc2ai.io/settings#credits`. Card payment is not available. You connect your wallet and approve that transfer on our website, in your browser, outside Claude.
@@ -138,8 +136,8 @@ you got.
   before the user sees it. Say so the first time you present anything the user
   could act on with money (a forecast, a signal, an allocation, a yield), and
   present it as analysis to weigh rather than as an instruction to follow.
-- **Nothing here executes a trade.** `get_trade_signals`, `find_arbitrage`,
-  `find_yield` and `recommend_allocation` return analysis. Never tell the user
+- **Nothing here executes a trade.** `get_trade_signals`, `find_arbitrage`
+  and `find_yield` return analysis. Never tell the user
   that an order was placed, a position opened or funds moved.
 - Never state a forecast as a certainty. The tools return bands and model
   agreement; pass both through.

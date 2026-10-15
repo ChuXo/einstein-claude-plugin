@@ -1,8 +1,8 @@
 {
   "name": "einstein",
   "displayName": "Agent Einstein",
-  "description": "Crypto and market intelligence: AI price forecasts with a published accuracy record, market sentiment, smart-money and whale flows, prediction-market signals, Bitcoin cycle data and congressional trades. Nineteen tools are free and need no account. Twenty-three tools are paid per call from a prepaid Einstein credit balance, which is topped up on emc2ai.io with USDC or E=MC2 on Base. No tool signs or sends a transaction, moves funds or connects a wallet.",
-  "version": "3.1.2",
+  "description": "Crypto and market intelligence: AI price forecasts with a published accuracy record, market sentiment, smart-money and whale flows, prediction-market signals, Bitcoin cycle data and congressional trades. Nineteen tools are free and need no account. Twenty-one tools are paid per call from a prepaid Einstein credit balance, which is topped up on emc2ai.io with USDC or E=MC2 on Base. No tool signs or sends a transaction, moves funds or connects a wallet.",
+  "version": "3.2.0",
   "author": {
     "name": "ChuXo",
     "url": "https://emc2ai.io"
