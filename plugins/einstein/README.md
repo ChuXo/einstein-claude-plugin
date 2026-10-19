@@ -5,7 +5,7 @@ checkable accuracy record, whale and smart-money flows, market sentiment,
 prediction-market signals, Bitcoin cycle position, congressional trades and
 token safety.
 
-Nineteen tools are free and need no account. Twenty-one tools are paid and
+Eighteen tools are free and need no account. Twenty-one tools are paid and
 need an Einstein account with prepaid credit. **Adding credit currently requires
 a crypto payment** (USDC or E=MC2 on Base), made on our website and never inside
 Claude. Every tool is listed below with what it does, what it costs and whether
@@ -56,9 +56,9 @@ Paid (sign-in and credit, $0.25 for this review):
 
 <!-- generated:tools:start — bun run build:claude-plugin-docs -->
 
-The server at `https://emc2ai.io/api/mcp` offers **40 tools: 19 free and 21 paid**. 39 of the 40 only read data. The exception is `generate_quantum_key`, explained on its own line. This list is generated from the server's own tool registry.
+The server at `https://emc2ai.io/api/mcp` offers **39 tools: 18 free and 21 paid**. 38 of the 39 only read data. The exception is `generate_quantum_key`, explained on its own line. This list is generated from the server's own tool registry.
 
-### Free tools (19) — no account, no sign-in, no payment
+### Free tools (18) — no account, no sign-in, no payment
 
 Each one reads a snapshot Einstein already computed on a schedule. A snapshot that has not been computed recently answers "not warm yet" rather than an error.
 
@@ -71,7 +71,6 @@ Each one reads a snapshot Einstein already computed on a schedule. A snapshot th
 - `get_robinhood_whale_prints` (Robinhood Chain Whale Prints) — Individual large DEX trades on Robinhood Chain (tokenized equities and memecoins), each with token, side, venue and USD value. **Free.** Read-only.
 - `get_polymarket_whales` (Polymarket Whale Trades) — Large and unusually early positions taken on Polymarket prediction markets. **Free.** Read-only.
 - `get_prediction_market_catalysts` (Prediction Market Catalyst Radar) — Upcoming dated Polymarket events whose odds are moving. **Free.** Read-only.
-- `get_prediction_market_yields` (Prediction Market Yield Surface) — Near-certain Polymarket outcomes ranked by annualized return to resolution. **Free.** Read-only.
 - `get_bitcoin_cycle_position` (Bitcoin On-Chain Cycle) — Where Bitcoin sits in its cycle by on-chain measures (realized profit, holder behaviour, valuation). **Free.** Read-only.
 - `check_token_safety` (Token Safety Check) — Honeypot and risk screen for an EVM token contract from a cached security dataset; reports UNKNOWN for a token it has not screened. **Free.** Read-only.
 - `get_congress_trades` (US Congress Stock Trades) — Recently disclosed stock and asset transactions by members of the US Congress. **Free.** Read-only.
@@ -96,7 +95,7 @@ Each call costs between $0.05 and $2.00, debited in US dollars from a prepaid cr
 - `track_whales` (Whale and Smart-Money Tracking) — Live large-holder activity: on-chain whale transfers, Hyperliquid perp whale positioning, or the profitable smart-money cohort. **Paid, $0.45–$0.50 per call.** Read-only.
 - `scan_market` (Market Scan) — Live market scans: top gainers, movers, quality-filtered gainers, altcoin season, technical analysis for one asset, or the market regime. **Paid, $0.25–$0.60 per call.** Read-only.
 - `detect_mev` (MEV Detection and Protection) — Detects sandwich attacks and MEV extraction against a token or wallet, or returns a written routing recommendation. **Paid, $0.50–$0.60 per call.** Read-only.
-- `find_arbitrage` (Arbitrage Scanner) — Reports price dislocations across DEXs, chains and prediction markets, including flash-loan-fundable routes. It reports them; it does not trade them. **Paid, $0.60–$1.00 per call.** Read-only.
+- `find_arbitrage` (Arbitrage Scanner) — Reports price dislocations across DEXs, chains and prediction markets, including flash-loan-fundable routes. It reports them; it does not trade them. **Paid, $1.00 per call.** Read-only.
 - `scan_launchpads` (Launchpad Scanner) — New and trending token launches on Pump.fun, Zora or Robinhood Chain. **Paid, $0.25–$0.40 per call.** Read-only.
 - `analyze_bitcoin` (Bitcoin Analytics) — Bitcoin analysis: mempool and fees, network and mining health, BRC-20 tokens, Runes, bridge comparison or Babylon staking data. **Paid, $0.25–$0.85 per call.** Read-only.
 - `assess_quantum_risk` (Quantum Risk Assessment) — Assessment of exposure to quantum computing: post-quantum readiness, a migration plan, or the quantum risk of a wallet's address types. **Paid, $0.50–$0.75 per call.** Read-only.
@@ -114,7 +113,7 @@ Each call costs between $0.05 and $2.00, debited in US dollars from a prepaid cr
 
 <!-- generated:pricing:start — bun run build:claude-plugin-docs -->
 
-- **Nineteen tools are free.** No account, no API key, no wallet and no payment.
+- **Eighteen tools are free.** No account, no API key, no wallet and no payment.
 - **Twenty-one tools are paid**, $0.05 to $2.00 per call. They need an Einstein account and a prepaid credit balance held in US dollars. The price of each tool is in the list above and in the tool's own description.
 - **Signing in.** The first paid call makes Claude open an OAuth 2.1 sign-in page on `emc2ai.io` in your browser. You can sign in with an Einstein account, or by connecting a crypto wallet and signing a login message that proves the address is yours. That signature is not a transaction and costs nothing.
 - **A new account starts with $0.00 of credit.** A paid call with no balance charges nothing and returns a link to add credit.
