@@ -5,7 +5,7 @@ published, checkable accuracy record, whale and smart-money flows, market
 sentiment, prediction-market signals, Bitcoin cycle position, congressional
 trades and token safety.
 
-Eighteen tools are free and need no account. Twenty-one tools are paid and
+Eighteen tools are free and need no account. Twenty-two tools are paid and
 need an Einstein account with prepaid credit. **Adding credit currently requires
 a crypto payment** (USDC or E=MC2 on Base), made on our website and never inside
 Claude. Every tool is listed below with what it does, what it costs and whether
@@ -48,7 +48,7 @@ Paid (sign-in and credit, $0.25 for this review):
 
 <!-- generated:tools:start — bun run build:claude-plugin-docs -->
 
-The server at `https://emc2ai.io/api/mcp` offers **39 tools: 18 free and 21 paid**. 38 of the 39 only read data. The exception is `generate_quantum_key`, explained on its own line. This list is generated from the server's own tool registry.
+The server at `https://emc2ai.io/api/mcp` offers **40 tools: 18 free and 22 paid**. 39 of the 40 only read data. The exception is `generate_quantum_key`, explained on its own line. This list is generated from the server's own tool registry.
 
 ### Free tools (18) — no account, no sign-in, no payment
 
@@ -73,7 +73,7 @@ Each one reads a snapshot Einstein already computed on a schedule. A snapshot th
 - `get_launchpad_radar` (Launchpad Radar) — Tokens that just migrated from a launchpad bonding curve to a DEX, with holder-distribution forensics. **Free.** Read-only.
 - `list_einstein_capabilities` (List Einstein Capabilities) — The live catalog of every tool on the server, split into free and paid with prices, plus how billing works. **Free.** Read-only.
 
-### Paid tools (21) — Einstein account and prepaid credit
+### Paid tools (22) — Einstein account and prepaid credit
 
 Each call costs between $0.05 and $2.00, debited in US dollars from a prepaid credit balance. Where a price is a range, the `kind` (or `venue` / `board`) argument selects the analysis and its price.
 
@@ -97,6 +97,7 @@ Each call costs between $0.05 and $2.00, debited in US dollars from a prepaid cr
 - `run_backtest` (Strategy Backtest) — Backtests a trading strategy on historical data from plain-language rules or a standard template, or optimizes its parameters. **Paid, $0.75–$2.00 per call.** Read-only.
 - `get_trade_signals` (Live Trade Signals) — Einstein's current trade setups with entry, stop and target levels and the reasoning behind each. Information only; no order is placed. **Paid, $0.50 per call.** Read-only.
 - `check_content_integrity` (Content Integrity Scan) — AI moderation of text you supply — a 0-10 quality score with a written rationale — or the list of yield vaults Einstein has scanned. **Paid, $0.05–$0.10 per call.** Read-only.
+- `analyze_youtube_video` (YouTube Video Analysis) — Analysis of one YouTube video from its link — the first 15 minutes, 1 hour or 3 hours: summary, timestamped points, explicit market calls with live prices, sponsor mentions. **Paid, $0.05–$0.60 per call.** Read-only.
 - `get_agent_context` (Einstein Agent Context) — Einstein's own current market context and operating state — the briefing its autonomous engine reads before a decision. **Paid, $1.00 per call.** Read-only.
 
 <!-- generated:tools:end -->
@@ -106,7 +107,7 @@ Each call costs between $0.05 and $2.00, debited in US dollars from a prepaid cr
 <!-- generated:pricing:start — bun run build:claude-plugin-docs -->
 
 - **Eighteen tools are free.** No account, no API key, no wallet and no payment.
-- **Twenty-one tools are paid**, $0.05 to $2.00 per call. They need an Einstein account and a prepaid credit balance held in US dollars. The price of each tool is in the list above and in the tool's own description.
+- **Twenty-two tools are paid**, $0.05 to $2.00 per call. They need an Einstein account and a prepaid credit balance held in US dollars. The price of each tool is in the list above and in the tool's own description.
 - **Signing in.** The first paid call makes Claude open an OAuth 2.1 sign-in page on `emc2ai.io` in your browser. You can sign in with an Einstein account, or by connecting a crypto wallet and signing a login message that proves the address is yours. That signature is not a transaction and costs nothing.
 - **A new account starts with $0.00 of credit.** A paid call with no balance charges nothing and returns a link to add credit.
 - **Adding credit requires a crypto payment.** Today the only way to add credit is to send USDC or E=MC2 (our token) on the Base network from your own wallet, at `emc2ai.io/settings#credits`. Card payment is not available. You connect your wallet and approve that transfer on our website, in your browser, outside Claude.
